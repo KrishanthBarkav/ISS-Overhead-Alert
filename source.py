@@ -13,7 +13,7 @@ def isNight():
     now = datetime.now()
 
     current_time = now.strftime("%H:%M:%S")
-    if int(current_time.split(':')[0]) + 5 > 18 or int(current_time.split(':')[0]) + 5 < 4:
+    if int(current_time.split(':')[0]) > 18 or int(current_time.split(':')[0]) < 4:
         return True
     return False
 
